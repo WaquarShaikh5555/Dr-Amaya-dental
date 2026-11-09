@@ -12,7 +12,9 @@ const treatments = [
 ];
 const whatsapp = 'https://wa.me/919591895500?text=Hello%20Amaya%20Dental%2C%20I%20would%20like%20to%20book%20a%20consultation.';
 const maps='https://maps.app.goo.gl/2LJRmCRcn11fS6Nj9?g_st=ac';
-const siteOrigin = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://amayadental.in';
+// Use the public Vercel production alias, not a protected deployment URL.
+// Update this when the clinic's custom domain is connected.
+const siteOrigin = 'https://amaya-dental-clinic.vercel.app';
 ---
 <!doctype html>
 <html lang="en">
@@ -21,7 +23,7 @@ const siteOrigin = process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${proces
   <title>Amaya Dental Clinic | Thoughtful dental care in Bengaluru</title>
   <meta name="description" content="Thoughtful dental care for every smile. Visit Amaya Dental in Vasanth Nagar or Sahakar Nagar, Bengaluru. Book a consultation or talk to us on WhatsApp."/>
   <link rel="canonical" href={siteOrigin + "/"}/>
-  <meta property="og:type" content="website"/><meta property="og:title" content="Amaya Dental | A little more reason to smile"/><meta property="og:description" content="Thoughtful dental care in Vasanth Nagar & Sahakar Nagar, Bengaluru."/><meta property="og:url" content={siteOrigin + "/"}/><meta property="og:image" content={siteOrigin + "/social-preview.png"}/><meta property="og:image:alt" content="Amaya Dental Clinic: Good care, real people, more smiles"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta name="twitter:card" content="summary_large_image"/>
+  <meta property="og:type" content="website"/><meta property="og:site_name" content="Amaya Dental Clinic"/><meta property="og:title" content="Amaya Dental | A little more reason to smile"/><meta property="og:description" content="Thoughtful dental care in Vasanth Nagar & Sahakar Nagar, Bengaluru."/><meta property="og:url" content={siteOrigin + "/"}/><meta property="og:image" content={siteOrigin + "/social-preview.png?v=2"}/><meta property="og:image:type" content="image/png"/><meta property="og:image:secure_url" content={siteOrigin + "/social-preview.png?v=2"}/><meta property="og:image:alt" content="Amaya Dental Clinic: Good care, real people, more smiles"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Amaya Dental | A little more reason to smile"/><meta name="twitter:description" content="Thoughtful dental care in Vasanth Nagar & Sahakar Nagar, Bengaluru."/><meta name="twitter:image" content={siteOrigin + "/social-preview.png?v=2"}/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
   <meta name="theme-color" content="#f7f5ef"/>
 </head>
